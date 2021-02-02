@@ -1,0 +1,93 @@
+#menu,
+#menu ~ nav {
+  display: none;
+}
+
+
+nav {
+  background: #fff;
+  z-index: 3;
+
+}
+
+.li_in_nav
+{
+
+  margin: 25px;
+
+}
+
+.li_in_nav-title
+{
+  margin: 25px;
+  color: rgb(99, 115, 129);
+    font-size: 14px;
+}
+
+
+
+
+#menu:checked ~ [for="menu"],
+#menu:checked ~ nav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu:checked ~ [for="menu"] {
+  width: 15px;
+  z-index: 10;
+  direction: rtl;
+}
+
+#menu:checked ~ [for="menu"] {
+  width: 15px;
+  z-index: -1;
+  direction: rtl;
+}
+
+#menu:checked ~ nav {
+  display: block;
+  width: 400px;
+
+
+}
+
+
+
+
+#menu:checked ~ body
+{
+  opacity: .3;
+}
+
+
+
+
+
+
+
+.close_menu
+
+{
+ font-size: 30px;
+ color: rgb(99, 115, 129);
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+
+@media  screen and (max-width: 470px) {
+  .li_in_nav
+{
+
+  margin: 5px;
+
+}
+
+
+
+  
+}
+
